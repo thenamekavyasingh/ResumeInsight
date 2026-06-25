@@ -11,7 +11,7 @@ export const openai = new OpenAI({
 export const getOpenAIResponse = async (prompt) => {
   try {
     const response = await openai.chat.completions.create({
-      model: "openrouter/free",
+      model: "google/gemma-4-31b-it:free",
       messages: [
         {
           role: "system",
@@ -123,7 +123,7 @@ ${resumeText}
 `;
   try {
     const response = await openai.chat.completions.create({
-      model: "openrouter/free",
+      model: "google/gemma-4-31b-it:free",
       // model: "gpt-4o",
       messages: [
         {
